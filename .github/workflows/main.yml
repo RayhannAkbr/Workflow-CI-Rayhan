@@ -2,7 +2,7 @@ name: Machine Learning CI
 
 on:
   push:
-    branches: [ main ] # Akan jalan setiap kali Anda push ke GitHub
+    branches: [ main ]
 
 jobs:
   train:
@@ -23,7 +23,7 @@ jobs:
     - name: Run MLflow Project
       run: |
         cd MLProject
-        mlflow run . --no-conda
+        mlflow run . --env-manager=local
 
     - name: Commit and Push Artifacts (Skilled Requirement)
       run: |
