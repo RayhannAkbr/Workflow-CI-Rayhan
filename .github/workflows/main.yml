@@ -25,10 +25,10 @@ jobs:
         cd MLProject
         mlflow run . --env-manager=local
 
-    - name: Commit and Push Artifacts (Skilled Requirement)
+    - name: Commit and Push Artifacts
       run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "action@github.com"
+        git config --global user.name "RayhannAkbr"
+        git config --global user.email "rayhanakbarr255@ggmail.com"
         git add .
         git commit -m "Add trained model artifacts" || exit 0
         git push
