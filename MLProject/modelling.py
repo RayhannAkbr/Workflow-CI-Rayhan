@@ -10,8 +10,6 @@ def train():
     y = df['Outcome']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-    # Simpan ke folder lokal agar bisa di-push ke GitHub
-    mlflow.set_tracking_uri("file:./mlruns")
     
     with mlflow.start_run():
         rf = RandomForestClassifier(n_estimators=100, max_depth=5)
