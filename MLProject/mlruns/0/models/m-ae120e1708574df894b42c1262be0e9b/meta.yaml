@@ -1,0 +1,10 @@
+artifact_location: file:///home/runner/work/Workflow-CI-Rayhan/Workflow-CI-Rayhan/MLProject/mlruns/0/models/m-ae120e1708574df894b42c1262be0e9b/artifacts
+creation_timestamp: 1766202827629
+experiment_id: '0'
+last_updated_timestamp: 1766202830001
+model_id: m-ae120e1708574df894b42c1262be0e9b
+model_type: null
+name: model
+source_run_id: f27d720d7a9b4b69995a75196680dbdc
+status: 2
+status_message: null
